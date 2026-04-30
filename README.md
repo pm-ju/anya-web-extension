@@ -24,18 +24,11 @@ The system is designed for speed and context awareness, utilizing WebSockets for
 The backend handles the voice processing, memory storage, and WebSocket connections.
 
 ```bash
-# Clone the repository
 git clone [https://github.com/pm-ju/anya-web-extension.git](https://github.com/pm-ju/anya-web-extension.git)
 cd anya-web-extension/backend
-
-# Create virtual environment
 python -m venv venv
 source venv/bin/activate 
-
-# Install dependencies
 pip install -r requirements.txt
-
-# Start the server
 uvicorn app.main:app --reload
 ```
 ### 2. Extension Setup
@@ -44,11 +37,7 @@ The extension captures browser context and handles audio input/output.
 
 ```bash
 cd ../extension
-
-# Install dependencies
 npm install
-
-# Build the extension
 npm run build
 ```
 ## Loading into chrome:
